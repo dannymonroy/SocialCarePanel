@@ -18,3 +18,13 @@ body  {
 label{
   color: #000000;
 }
+
+#welcome{
+  color: #29335C;
+  margin-bottom: 10%;
+}
+
+#card-header{
+  background-color: #FF5E42;
+  color: #FFFFFF;
+}

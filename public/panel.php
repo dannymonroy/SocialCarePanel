@@ -22,13 +22,65 @@
       </div>
     </div>
     <!-- Login Form -->
-
-    <div class="container-fluid">
+    <?php
+      if(isset($_POST["username"])){
+        $username = $_POST["username"];
+      } else {
+        $username = "Stranger!";
+      }
+    ?>
+    <div class="container">
       <div class="row">
-        <h1>Hello, <?php echo $_POST['username']?></h1>
+        <div class="col-10">
+          <h1 id="welcome">Welcome back, <?php echo $username;?></h1>
+        </div>
+        <div class="col-2">
+          <h2 class="lead"><?php echo "Today is " . date("l")." ".date("d/m/Y")." ".date("h:i:s"); ?></h2>
+        </div>
       </div>
-    </div>
-
+      <div class="container">
+        <!--PLEASE ERASE THIS. I DID IT FOR PADDING -->
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card text-center">
+              <h3 class="card-header" id="card-header"> View Reports </h3>
+              <div class="card-block">
+                <p class="card-text">Click in the button to see all the visits of your clients.</p>
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <h3 class="card-header" id="card-header"> View Carers </h3>
+              <div class="card-block">
+                <p class="card-text">View all carers register in the application.</p>
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <h3 class="card-header" id="card-header"> Access Clients </h3>
+              <div class="card-block">
+                <p class="card-text">View all clients register under your management.</p>
+                <a href="#" class="btn btn-primary ">Go</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <h3 class="card-header" id="card-header"> Create Visits </h3>
+              <div class="card-block">
+                <p class="card-text">Create new visits for an existing client</p>
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Bootstrap 4: Scripts  -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- General CSS import -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Social Care Panel</title>
+    <title>Social Care Panel!</title>
   </head>
   <body>
 
@@ -25,25 +25,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col"><!-- For Space --></div>
-        <div class="col-5 col-4-sm">
-          <form action="panel.php" method="post">
-            <div class="form-group input-group-lg">
-              <label for="username">Username:</label>
-
-
-              <input type="text" class="form-control" id="username" placeholder="Username">
-            </div>
-            <div class="form-group input-group-lg">
-              <label for="password">Password</label>
-              <input type="password" class="form-control input-lg" id="password" placeholder="Password">
-            </div>
-            <div class="col-md text-center">
-              <input class="btn btn-primary btn-lg" type="submit" value="Submit">
-            </div>
-          </form>
-        </div>
-        <div class="col"><!-- For Space --></div>
+        <h1>Hello, <?php echo $_POST['username']?></h1>
       </div>
     </div>
 

@@ -5,3 +5,16 @@ ORANGE(WEB): #FFA400 (ORANGE)
 DEEP KOAMARU: #29335C (BLUE)
 BLACK: #000000
 */
+
+.jumbotron{
+  background-color: #FF5E42;
+  color: #FFFFFF;
+}
+
+body  {
+    background-color: #E6E6EA;
+}
+
+label{
+  color: #000000;
+}

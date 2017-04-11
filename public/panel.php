@@ -1,19 +1,4 @@
-<?php
-
-  define("DB_SERVER", "localhost");
-  define("DB_USER", "root");
-  define("DB_PASS", "D/d/185987410");
-  define("DB_NAME", "socialcarepanel");
-
-  $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
-  if(mysqli_connect_errno()){
-  	die("Database connection failed: ". mysqli_connect_error());
-  }
-
-if(mysqli_connect_errno()){
-  die("Database connection failed: ". mysqli_connect_error());
-}
-?>
+<?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php");?>
 
 <?php
@@ -67,7 +52,7 @@ if(mysqli_connect_errno()){
                <?php
                 while($row = mysqli_fetch_assoc($result)){
 
-               ?> <li><?php echo "Name: <b>" .  $row['title']." ".$row['full_name'].".</b> Area: <b>".$row['area']."</b>. Start Time: <b>".$row['start_date']."</b>."?></li>
+               ?> <li><?php echo "Name: <b>" .  $row['title']." ".$row['full_name'].".</b></br> Area: <b>".$row['area']."</b>. </br>Start Time: <b>".$row['start_date']."</b>."?></li>
                <?php
                 }
              ?>
@@ -82,5 +67,6 @@ if(mysqli_connect_errno()){
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <?php include("../includes/layouts/footer.php"); ?>
   </body>
 </html>

@@ -47,21 +47,36 @@
                </div>
              </section>
            </main>
-           <div class="container">
-             <ul>
-               <?php
-                while($row = mysqli_fetch_assoc($result)){
-
-               ?> <li><?php echo "Name: <b>" .  $row['title']." ".$row['full_name'].".</b></br> Area: <b>".$row['area']."</b>. </br>Start Time: <b>".$row['start_date']."</b>."?></li>
-               <?php
-                }
-             ?>
-             </ul>
-
+           <div class="container justify-center">
+             <div class="col text-center">
+             <h2>Visits Today</h2>
+             </div>
            </div>
+           <table class="table">
+             <thead class="thead-inverse">
+               <tr>
+                 <th>Id</th>
+                 <th>Title</th>
+                 <th>Name</th>
+                 <th>Area</th>
+                 <th>Start Time</th>
+               </tr>
+             </thead>
+ <tbody>
+   <?php
+    while($row = mysqli_fetch_assoc($result)){
+      ?>
+   <tr>
+     <th scope="row"><?php echo $row['id']?></th>
+     <td><?php echo $row['title']?></td>
+     <td><b><?php echo $row['full_name']?></b></td>
+     <td><?php echo $row['area']?></td>
+     <td><?php echo $row['start_date']?></td>
+   </tr>
 
-         </div>
-
+   <?php } ?>
+ </tbody>
+</table>
 
     <!-- Bootstrap 4: Scripts  -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

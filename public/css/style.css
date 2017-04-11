@@ -31,5 +31,9 @@ label{
 }
 
 #submit{
-  padding-bottom: 10%;
+  padding: 10% 0;
+}
+
+.row{
+  padding: 5% 0;
 }

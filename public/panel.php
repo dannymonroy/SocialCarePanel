@@ -13,6 +13,15 @@
     <title>Social Care Panel</title>
   </head>
   <body>
+
+    <?php
+    if (isset($_POST['username'])) {
+      $username = $_POST['username'];
+    } else {
+      //For testing purposes only. This will never be the case.
+      $username = "Stranger";
+    }
+    ?>
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
       <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,31 +54,39 @@
       </div>
     </div>
 
-           <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-             <h1>Dashboard</h1>
+    <div class="container">
+      <h2>Welcome, <?php echo $username  ?></h2>
+    </div>
 
+      <div class="container justify-center">
+           <main class="col text-center">
+             <h1>Dashboard</h1>
              <section class="row text-center placeholders">
                <div class="col-6 col-sm-3 placeholder">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                 <h4>Label</h4>
-                 <div class="text-muted">Something else</div>
+                 <h4>Clients</h4>
+                 <div class="text-muted">Add or view clients</div>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                 <h4>Label</h4>
-                 <span class="text-muted">Something else</span>
+                 <h4>Carers</h4>
+                 <span class="text-muted">Add or view carers</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                 <h4>Label</h4>
-                 <span class="text-muted">Something else</span>
+                 <h4>Profile</h4>
+                 <span class="text-muted">View your profile</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-                 <h4>Label</h4>
-                 <span class="text-muted">Something else</span>
+                 <h4>Reports</h4>
+                 <span class="text-muted">View reports</span>
                </div>
              </section>
+           </main>
+
+
+         </div>
 
 
     <!-- Bootstrap 4: Scripts  -->

@@ -18,7 +18,7 @@
     if (isset($_POST['username'])) {
       $username = $_POST['username'];
     } else {
-      //For testing purposes only. This will never be the case.
+      //For testing purposes only. This will never be the case once log in is put in place.
       $username = "Stranger";
     }
     ?>
@@ -66,22 +66,30 @@
              <h1>Dashboard</h1>
              <section class="row text-center placeholders">
                <div class="col-6 col-sm-3 placeholder">
+                 <a href="#">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 </a>
                  <h4>Clients</h4>
                  <div class="text-muted">Add or view clients</div>
                </div>
                <div class="col-6 col-sm-3 placeholder">
+                 <a href="#">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 </a>
                  <h4>Carers</h4>
                  <span class="text-muted">Add or view carers</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
+                 <a href="#">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 </a>
                  <h4>Profile</h4>
                  <span class="text-muted">View your profile</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
+                 <a href="#">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 </a>
                  <h4>Reports</h4>
                  <span class="text-muted">View reports</span>
                </div>

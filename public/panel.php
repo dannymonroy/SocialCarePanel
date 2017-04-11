@@ -1,7 +1,8 @@
+<?php require_once("../includes/functions.php");?>
 <?php include("../includes/layouts/header.php");?>
 
     <div class="container">
-      <h2>Welcome, <?php echo $username  ?></h2>
+      <h2>Welcome, <?php echo @displayName($_POST['username']); ?></h2>
     </div>
 
       <div class="container justify-center">

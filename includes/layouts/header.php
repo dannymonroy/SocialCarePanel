@@ -14,14 +14,6 @@
   </head>
   <body>
 
-    <?php
-    if (isset($_POST['username'])) {
-      $username = $_POST['username'];
-    } else {
-      //For testing purposes only. This will never be the case once log in is put in place.
-      $username = "Stranger";
-    }
-    ?>
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
       <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">

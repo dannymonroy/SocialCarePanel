@@ -1,9 +1,9 @@
 <?php
 
   define("DB_SERVER", "localhost");
-  define("DB_USER", "root");
-  define("DB_PASS", "D/d/185987410");
-  define("DB_NAME", "socialcarepanel");
+  define("DB_USER", "id457409_danny");
+  define("DB_PASS", "185987410");
+  define("DB_NAME", "id457409_db");
 
   $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
   if(mysqli_connect_errno()){

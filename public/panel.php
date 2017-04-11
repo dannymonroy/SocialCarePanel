@@ -87,24 +87,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<!--
-<div class="container">
-  <div class="row">
-    <form class="login-form">
-      <div class="col-md-12">
-      <div class="form-group">
-        <label for="username">Please Introduce Your Username:</label>
-        <input type="text" class="form-control" id="username" placeholder="Username">
-      </div>
-      <div class="form-group col-md text-center">
-        <label for="password">Another label</label>
-        <input type="text" class="form-control" id="password" placeholder="Password">
-      </div>
-      <div class="col-md text-center">
-        <input class="btn btn-primary btn-lg" type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
-</div>
--->

@@ -1,4 +1,27 @@
+<?php
+
+  define("DB_SERVER", "localhost");
+  define("DB_USER", "root");
+  define("DB_PASS", "D/d/185987410");
+  define("DB_NAME", "socialcarepanel");
+
+  $connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
+  if(mysqli_connect_errno()){
+  	die("Database connection failed: ". mysqli_connect_error());
+  }
+
+if(mysqli_connect_errno()){
+  die("Database connection failed: ". mysqli_connect_error());
+}
+?>
 <?php require_once("../includes/functions.php");?>
+
+<?php
+
+  $query = "SELECT * FROM test;";
+  $result = mysqli_query($connection, $query);
+?>
+
 <?php include("../includes/layouts/header.php");?>
 
     <div class="container">
@@ -39,7 +62,18 @@
                </div>
              </section>
            </main>
+           <div class="container">
+             <ul>
+               <?php
+                while($row = mysqli_fetch_assoc($result)){
 
+               ?> <li><?php echo "Name: <b>" .  $row['title']." ".$row['full_name'].".</b> Area: <b>".$row['area']."</b>. Start Time: <b>".$row['start_date']."</b>."?></li>
+               <?php
+                }
+             ?>
+             </ul>
+
+           </div>
 
          </div>
 

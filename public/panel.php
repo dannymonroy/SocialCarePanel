@@ -2,17 +2,17 @@
 <?php require_once("../includes/functions.php");?>
 
 <?php
-
   $query = "SELECT * FROM test;";
   $result = mysqli_query($connection, $query);
+  //Functions: Confirms if the query was successful.
+  confirm_query($result);
 ?>
 
 <?php include("../includes/layouts/header.php");?>
 
-    <div class="container">
-      <h2>Welcome, <?php echo @displayName($_POST['username']); ?></h2>
+  <div class="container">
+    <h2>Welcome, <?php echo @displayName($_POST['username']);?></h2>
     </div>
-
       <div class="container justify-center">
            <main class="col text-center">
              <h1>Dashboard</h1>
@@ -55,7 +55,6 @@
            <table class="table">
              <thead class="thead-inverse">
                <tr>
-                 <th>Id</th>
                  <th>Title</th>
                  <th>Name</th>
                  <th>Area</th>
@@ -67,8 +66,7 @@
     while($row = mysqli_fetch_assoc($result)){
       ?>
    <tr>
-     <th scope="row"><?php echo $row['id']?></th>
-     <td><?php echo $row['title']?></td>
+     <th scope="row"><?php echo $row['title']?></th>
      <td><b><?php echo $row['full_name']?></b></td>
      <td><?php echo $row['area']?></td>
      <td><?php echo $row['start_date']?></td>
@@ -82,6 +80,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <?php
+    // Making the database in memory free when is no longer needed.
+    mysqli_free_result($result); ?>
     <?php include("../includes/layouts/footer.php"); ?>
   </body>
 </html>

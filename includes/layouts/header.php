@@ -44,7 +44,7 @@
     <!-- Jumbotron -->
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-1">Social Care Panel</h1>
+        <h1 class="display-2">Social Care Panel</h1>
         <blockquote class="lead">A place to manage your clients needs</blockquote>
       </div>
     </div>

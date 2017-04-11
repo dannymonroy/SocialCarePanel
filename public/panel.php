@@ -10,10 +10,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- General CSS import -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Social Care Panel!</title>
+    <title>Social Care Panel</title>
   </head>
   <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Social Care App</a>
 
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Jumbotron -->
     <div class="jumbotron">
       <div class="container">
@@ -21,66 +44,34 @@
         <blockquote class="lead">A place to manage your clients needs</blockquote>
       </div>
     </div>
-    <!-- Login Form -->
-    <?php
-      if(isset($_POST["username"])){
-        $username = $_POST["username"];
-      } else {
-        $username = "Stranger!";
-      }
-    ?>
-    <div class="container">
-      <div class="row">
-        <div class="col-10">
-          <h1 id="welcome">Welcome back, <?php echo $username;?></h1>
-        </div>
-        <div class="col-2">
-          <h2 class="lead"><?php echo "Today is " . date("l")." ".date("d/m/Y")." ".date("h:i:s"); ?></h2>
-        </div>
-      </div>
-      <div class="container">
-        <!--PLEASE ERASE THIS. I DID IT FOR PADDING -->
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card text-center">
-              <h3 class="card-header" id="card-header"> View Reports </h3>
-              <div class="card-block">
-                <p class="card-text">Click in the button to see all the visits of your clients.</p>
-                <a href="#" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card text-center">
-              <h3 class="card-header" id="card-header"> View Carers </h3>
-              <div class="card-block">
-                <p class="card-text">View all carers register in the application.</p>
-                <a href="#" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card text-center">
-              <h3 class="card-header" id="card-header"> Access Clients </h3>
-              <div class="card-block">
-                <p class="card-text">View all clients register under your management.</p>
-                <a href="#" class="btn btn-primary ">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card text-center">
-              <h3 class="card-header" id="card-header"> Create Visits </h3>
-              <div class="card-block">
-                <p class="card-text">Create new visits for an existing client</p>
-                <a href="#" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
+           <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+             <h1>Dashboard</h1>
+
+             <section class="row text-center placeholders">
+               <div class="col-6 col-sm-3 placeholder">
+                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 <h4>Label</h4>
+                 <div class="text-muted">Something else</div>
+               </div>
+               <div class="col-6 col-sm-3 placeholder">
+                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 <h4>Label</h4>
+                 <span class="text-muted">Something else</span>
+               </div>
+               <div class="col-6 col-sm-3 placeholder">
+                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 <h4>Label</h4>
+                 <span class="text-muted">Something else</span>
+               </div>
+               <div class="col-6 col-sm-3 placeholder">
+                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 <h4>Label</h4>
+                 <span class="text-muted">Something else</span>
+               </div>
+             </section>
+
+
     <!-- Bootstrap 4: Scripts  -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

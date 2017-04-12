@@ -1,13 +1,5 @@
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php");?>
-
-<?php
-  $query = "SELECT * FROM test;";
-  $result = mysqli_query($connection, $query);
-  //Functions: Confirms if the query was successful.
-  confirm_query($result);
-?>
-
 <?php include("../includes/layouts/header.php");?>
 
   <div class="container">
@@ -63,6 +55,7 @@
              </thead>
  <tbody>
    <?php
+    $result = find_all_visists();
     while($row = mysqli_fetch_assoc($result)){
       ?>
    <tr>

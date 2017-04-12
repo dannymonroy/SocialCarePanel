@@ -13,4 +13,13 @@
       die("Database query failed");
     }
   }
+
+  function find_all_visists(){
+    global $connection;
+    $query = "SELECT * FROM test;";
+    $result = mysqli_query($connection, $query);
+    //Functions: Confirms if the query was successful.
+    confirm_query($result);
+    return $result;
+  }
 ?>

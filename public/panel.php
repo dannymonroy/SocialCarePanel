@@ -7,28 +7,30 @@
     </div>
       <div class="container justify-center">
            <main class="col text-center">
-             <h1>Dashboard</h1>
+             <div class="padding">
+             <h4 class="display-4">Dashboard</h4>
+             </div>
              <section class="row text-center placeholders">
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_client.php">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                  </a>
                  <h4>Clients</h4>
-                 <div class="text-muted">Add or view clients</div>
+                 <div class="text-muted">Add a new client</div>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_carer.php">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                  </a>
                  <h4>Carers</h4>
-                 <span class="text-muted">Add or view carers</span>
+                 <span class="text-muted">Add a new carer</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_visit.php">
                  <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
                  </a>
                  <h4>Visits</h4>
-                 <span class="text-muted">Create new visits</span>
+                 <span class="text-muted">Add a new visit</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="reports.php">
@@ -39,9 +41,14 @@
                </div>
              </section>
            </main>
+           <div class="padding">
+             <br />
+           </div>
            <div class="container justify-center">
              <div class="col text-center">
-             <h2>Visits Today</h2>
+               <div class="padding">
+                 <h4 class="display-4">Visits Today</h4>
+               </div>
              </div>
            </div>
            <table class="table">

@@ -25,9 +25,12 @@
     }
 
   } else {
-    // WE DON'T ALLOW IT AND REDIRECT TO THE SAME PAGE.
+    // Display message here.
     redirect_to("new_visit.php");
   }
+
+  // We free the results.
+  mysqli_free_result($result);
 ?>
 
-<?php// mysqli_free_result($result); ?>
+<?php  ?>

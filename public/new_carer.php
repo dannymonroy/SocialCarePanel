@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
               <label for="name">First Name:</label>
-              <input class="form-control" type="text" name="name" placeholder="John">
+              <input class="form-control" type="text" name="name" placeholder="John" id="name" value="">
             </div>
             <div class="form-group">
               <label for="middle_name">Middle Name:</label>
@@ -34,12 +34,13 @@
             </div>
             <div class="form-group">
               <label for="surname">Surname:</label>
-              <input class="form-control" type="text" name="Surname" placeholder="Doe">
+              <input class="form-control" type="text" name="surname" placeholder="Doe" id="surname" value="">
             </div>
             <div class="form-group">
               <label for="password">Password:</label>
               <input class="form-control" id="password" name="password" placeholder="Password for Carer"></input>
             </div>
+
             <div class="col-md text-center" id="submit">
             <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
             <a href="panel.php" name="back">

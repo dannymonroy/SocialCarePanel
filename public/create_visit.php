@@ -21,7 +21,7 @@
     if($result){
       redirect_to("panel.php");
     } else {
-      redirect_to("index.html");
+      redirect_to("index.php");
     }
 
   } else {

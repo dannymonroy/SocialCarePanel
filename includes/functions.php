@@ -32,4 +32,22 @@
     confirm_query($result);
     return $result;
   }
+
+  function create_id ($name, $surname){
+
+    $name = strtolower($name);
+    $surname = strtolower($surname);
+
+    if(strlen($surname) >= 4){
+      $surname = substr($surname, 0, 4);
+    } elseif (strlen($surname) == 3){
+      $surname = $surname[0].$surname;
+    } else {
+      $surname = $surname.$surname;
+    }
+    $personId= $name[0].$name[1].$surname;
+
+    return $personId;
+  }
+
 ?>

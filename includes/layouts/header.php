@@ -19,7 +19,7 @@
       <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Social Care App</a>
+      <a class="navbar-brand" href="#">Social Care Panel</a>
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
@@ -43,8 +43,10 @@
     </nav>
     <!-- Jumbotron -->
     <div class="jumbotron">
+      <a href="panel.php" class="nounderline">
       <div class="container">
         <h1 class="display-2">Social Care Panel</h1>
         <blockquote class="lead">A place to manage your clients needs</blockquote>
       </div>
+      </a>
     </div>

@@ -20,6 +20,14 @@ label{
   color: #000000;
 }
 
+.nounderline{
+  text-decoration: none;
+  color:#FFFFFF;
+}
+.nounderline:hover{
+  text-decoration: none;
+  color:#FFFFFF;
+}
 #welcome{
   color: #29335C;
   margin-bottom: 10%;

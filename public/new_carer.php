@@ -2,10 +2,12 @@
 <?php include("../includes/layouts/header.php");?>
   <div class="container text-center">
     <div class="padding">
-      <h4 class="display-4">Create Carer</h4>
+      <h4 class="display-4">New Carer</h4>
     </div>
   </div>
   <div class="container">
+    <p>Here you can create carer who can be added to clients visits.
+    The password chosen will be the one needed to log in to their Android application.</p>
     <div class="row">
       <div class="col-2">
       </div>
@@ -40,6 +42,9 @@
             </div>
             <div class="col-md text-center" id="submit">
             <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
+            <a href="panel.php" name="back">
+              <button href="panel.php" class="btn btn-primary" type="button">Go Back</button>
+            </a>
             </div>
           </form>
         </div>

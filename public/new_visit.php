@@ -1,13 +1,13 @@
 <?php require_once("../includes/functions.php");?>
 <?php include("../includes/layouts/header.php");?>
-<<<<<<< HEAD
-=======
   <div class="container text-center">
     <div class="padding">
-      <h4 class="display-4">Create Visit</h4>
+      <h4 class="display-4">New Visit</h4>
     </div>
   </div>
   <div class="container">
+    <p>Please introduce all fields of an existing carer and client to create a new visit.
+    This visit will show in the carers Android application.</p>
     <div class="row">
       <div class="col-2">
       </div>
@@ -41,11 +41,16 @@
                 <input type="text" name="start_time" placeholder="00:00">
                 <label for="end_time">End Time:</label>
                 <input type="text" name="end_time" placeholder="00:00">
+            </div>
+            <div class="form-group">
               <label for="date">Date:</label>
               <input type="text" name="date" placeholder="dd/mm/yy">
             </div>
             <div class="col-md text-center" id="submit">
             <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
+            <a href="panel.php" name="back">
+              <button href="panel.php" class="btn btn-primary" type="button">Go Back</button>
+            </a>
             </div>
           </form>
         </div>
@@ -55,13 +60,14 @@
 
   </div>
 
->>>>>>> connecting_db
   <?php include("../includes/layouts/footer.php"); ?>
 
-  
+
   </body>
 </html>
 <!--
+
+
 <div class="container justify-center">
 <div class="col"></div>
 <div class="col-3">

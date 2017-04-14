@@ -8,7 +8,7 @@
     $surname = mysql_prep($_POST["surname"]);
 
     $carerId = create_id($name, $surname);
-  
+
     $middleName = mysql_prep($_POST["middle_name"]);
     $password = mysql_prep($_POST["password"]);
 

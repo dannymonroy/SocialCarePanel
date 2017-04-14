@@ -25,12 +25,9 @@
     }
 
   } else {
-    // Display message here.
     redirect_to("new_visit.php");
   }
 
   // We free the results.
   mysqli_free_result($result);
 ?>
-
-<?php  ?>

@@ -16,12 +16,12 @@
             <div class="form-group">
               <label for="title">Title:</label>
               <select class="form-control" name="title">
-                <option value="mr">Mr</option>
-                <option value="ms">Ms</option>
-                <option value="mrs">Mrs</option>
-                <option value="miss">Miss</option>
-                <option value="dr">Dr</option>
-                <option value="madam">Madam</option>
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+                <option value="Madam">Madam</option>
               </select>
             </div>
             <div class="form-group">
@@ -57,9 +57,9 @@
             <div class="form-group">
               <label for="level_vulnerability">Level of Vulnerability:</label>
               <select class="form-control" name="level_vulnerability">
-                <option value="Low">Low</option>
-                <option value="Medium">Medium</option>
-                <option value="High">High</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
               </select>
             </div>
             <div class="col-md text-center" id="submit">

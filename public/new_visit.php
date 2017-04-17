@@ -1,4 +1,5 @@
 <?php require_once("../includes/functions.php");?>
+<?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
   <div class="container text-center">
     <div class="padding">
@@ -24,18 +25,34 @@
                 <option value="madam">Madam</option>
               </select>
             </div>
+            <!-- Some serious PHP HERE -->
             <div class="form-group">
               <label for="client-id">Select Client:</label>
+              <?php
+              $query =  "SELECT client_id, name, surname FROM Clients";
+              $result = mysqli_query($connection, $query); ?>
               <select class="form-control" name="client_id">
-                <option value=""></option>
+                <?php
+                while ($row = mysqli_fetch_assoc($result)) {
+                  echo "<option value="; echo $row['client_id']."\""; echo ">".$row['name']." ".$row['surname']; echo "</option>";
+                } ?>
               </select>
             </div>
+
             <div class="form-group">
               <label for="carer_id">Select Carer:</label>
+              <?php
+              $query =  "SELECT carer_id, name, surname FROM Carers";
+              $result = mysqli_query($connection, $query); ?>
               <select class="form-control" name="carer_id">
-                <option value=""></option>
+                <?php
+                while ($row = mysqli_fetch_assoc($result)) {
+                  echo "<option value="; echo $row['carer_id']."\""; echo ">".$row['name']." ".$row['surname']; echo "</option>";
+                } ?>
               </select>
             </div>
+
+
             <div class="form-group">
                 <label for="start_time">Start Time:</label>
                 <input type="text" name="start_time" placeholder="00:00">
@@ -57,51 +74,7 @@
       <div class="col-2">
       </div>
     </div>
-
   </div>
-
   <?php include("../includes/layouts/footer.php"); ?>
-
-
   </body>
 </html>
-<!--
-
-
-<div class="container justify-center">
-<div class="col"></div>
-<div class="col-3">
-<h2>Create Visit</h2>
-<div class="form-group">
-<form class="" action="create_visit.php" method="post">
-<label for="title" class="col-3 col-form-label">Title</label>
-<div class="col-6">
-<input class="form-control" name="title" type="text" placeholder="Mr" id="title">
-</div>
-</div>
-<div class="form-group">
-<label for="example-search-input" class="col-3 col-form-label">Full Name</label>
-<div class="col-6">
-<input class="form-control" name="full_name" type="text" placeholder="John Doe" id="example-search-input">
-</div>
-</div>
-<div class="form-group">
-<label for="example-email-input" class="col-3 col-form-label">Area</label>
-<div class="col-6">
-<input class="form-control" name="area" type="text" placeholder="London" id="example-email-input">
-</div>
-</div>
-<div class="form-group">
-<label for="example-url-input" class="col-3 col-form-label">Start Time</label>
-<div class="col-6">
-<input class="form-control" name="start_date" type="text" placeholder="00:00" id="example-url-input">
-</div>
-</div>
-<div class="col-md text-center" id="submit">
-<input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
-</div>
-</form>
-</div>
-<div class="col-3"></div>
-</div>
--->

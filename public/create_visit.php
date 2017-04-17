@@ -3,8 +3,7 @@
 
 <?php
   if(isset($_POST["submit"])){
-    // IF SUBMITTED PROCESS THE FORM AND ADD TO THE DB.
-
+  
     $title = mysql_prep($_POST["title"]);
     $fullName = mysql_prep($_POST["full_name"]);
     $area = mysql_prep($_POST["area"]);

@@ -51,16 +51,14 @@
             <div class="form-group">
               <p>This is to be displayed in the carers application.</p>
               <label for="general_information">General Information:</label>
-              <!--<input type="text" name="general_information"> -->
               <textarea class="form-control" id="address" name="general_information" rows="3" placeholder="This is to be displayed in the carers application"></textarea>
             </div>
             <div class="form-group">
-              <label for="level_vulnerability">Level of Vulnerability:</label>
-              <select class="form-control" name="level_vulnerability">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
-              </select>
+              <label for="levelVulnerability">Level of Vulnerability:</label><br>
+              <input type="radio" name="level_vulnerability" value="Low" checked/> Low <br>
+              <input type="radio" name="level_vulnerability" value="Medium"/> Medium <br>
+              <input type="radio" name="level_vulnerability" value="High"/> High <br>
+
             </div>
             <div class="col-md text-center" id="submit">
             <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
@@ -77,3 +75,9 @@
   <?php include("../includes/layouts/footer.php"); ?>
   </body>
 </html>
+
+<!--  <select class="form-control" name="levelVulnerability">
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+</select> -->

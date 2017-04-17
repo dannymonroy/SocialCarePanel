@@ -17,7 +17,7 @@
     $levelVulnerability = mysql_prep($_POST["level_vulnerability"]);
 
     $query =  "INSERT INTO Clients ( ";
-    $query .= " client_id, title, name, middle_name, surname, address, postcode, area, general_information, keycode, level_vulnerability ";
+    $query .= " client_id, title, name, middle_name, surname, address, postcode, area, general_information, keycode, level_vulnerability";
     $query .= " ) VALUES (";
     $query .= " '{$clientId}','{$title}','{$name}','{$middleName}','{$surname}','{$address}','{$postcode}','{$area}','{$generalInfo}','{$keycode}','{$levelVulnerability}'";
     $query .= ");";

@@ -50,4 +50,10 @@
     return $personId;
   }
 
+  function date_formatted ($userDate){
+    $userDate = explode("/", $userDate);
+    $cleanDate = $userDate[2]."-".$userDate[1]."-".$userDate[0];
+    return $cleanDate;
+  }
+
 ?>

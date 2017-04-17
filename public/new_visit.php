@@ -1,6 +1,7 @@
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
+<!--TODO: Change the form name to be grabbed from the database including an extra query after the client is selected -->
   <div class="container text-center">
     <div class="padding">
       <h4 class="display-4">New Visit</h4>
@@ -14,6 +15,7 @@
       </div>
         <div class="col-8">
           <form class="" action="create_visit.php" method="post">
+            <!--
             <div class="form-group">
               <label for="title">Title:</label>
               <select class="form-control" name="title">
@@ -25,7 +27,7 @@
                 <option value="madam">Madam</option>
               </select>
             </div>
-            <!-- Some serious PHP HERE -->
+          -->
             <div class="form-group">
               <label for="client-id">Select Client:</label>
               <?php
@@ -34,7 +36,7 @@
               <select class="form-control" name="client_id">
                 <?php
                 while ($row = mysqli_fetch_assoc($result)) {
-                  echo "<option value="; echo $row['client_id']."\""; echo ">".$row['name']." ".$row['surname']; echo "</option>";
+                  echo "<option value=\""; echo $row['client_id']."\""; echo ">".$row['name']." ".$row['surname']; echo "</option>";
                 } ?>
               </select>
             </div>
@@ -47,7 +49,7 @@
               <select class="form-control" name="carer_id">
                 <?php
                 while ($row = mysqli_fetch_assoc($result)) {
-                  echo "<option value="; echo $row['carer_id']."\""; echo ">".$row['name']." ".$row['surname']; echo "</option>";
+                  echo " <option value=\""; echo $row['carer_id']."\""; echo ">".$row['name']." ".$row['surname']; echo "</option>";
                 } ?>
               </select>
             </div>
@@ -61,7 +63,7 @@
             </div>
             <div class="form-group">
               <label for="date">Date:</label>
-              <input type="text" name="date" placeholder="dd/mm/yy">
+              <input type="text" name="date" placeholder="dd-mm-yyyy">
             </div>
             <div class="col-md text-center" id="submit">
             <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">

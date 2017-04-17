@@ -16,12 +16,12 @@
             <div class="form-group">
               <label for="title">Title:</label>
               <select class="form-control" name="title">
-                <option value="mr">Mr</option>
-                <option value="ms">Ms</option>
-                <option value="mrs">Mrs</option>
-                <option value="miss">Miss</option>
-                <option value="dr">Dr</option>
-                <option value="madam">Madam</option>
+                <option value="Mr">Mr</option>
+                <option value="Ms">Ms</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+                <option value="Madam">Madam</option>
               </select>
             </div>
             <div class="form-group">

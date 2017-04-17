@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- General CSS import -->
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <!-- General JavaScript Import-->
     <script src="js/script.js"></script>
     <title>Social Care Panel</title>
@@ -47,7 +48,7 @@
     <div class="jumbotron">
       <a href="panel.php" class="nounderline">
       <div class="container">
-        <h1 class="display-2">Social Care Panel</h1>
+        <h1 class="display-2" id="font">Social Care Panel</h1>
         <blockquote class="lead">A place to manage your clients needs</blockquote>
       </div>
       </a>

@@ -5,11 +5,15 @@ ORANGE(WEB): #FFA400 (ORANGE)
 DEEP KOAMARU: #29335C (BLUE)
 BLACK: #000000
 */
+h1.display-2{
+  font-family: 'Lobster', cursive;
+}
 
 .jumbotron{
   padding-top: 6em;
   background-color: #FF5E42;
   color: #FFFFFF;
+
 }
 
 body  {
@@ -24,6 +28,7 @@ label{
   text-decoration: none;
   color:#FFFFFF;
 }
+
 .nounderline:hover{
   text-decoration: none;
   color:#FFFFFF;

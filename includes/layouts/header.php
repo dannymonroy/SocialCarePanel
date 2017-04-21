@@ -30,10 +30,16 @@
             <a class="nav-link" href="panel.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Settings</a>
+            <a class="nav-link" href="new_client.php">Add Clients</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="new_carer.php">Add Carers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="new_visit.php">Add Visits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reports.php">Reports</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Help</a>

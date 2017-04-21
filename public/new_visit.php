@@ -7,27 +7,17 @@
       <h4 class="display-4">New Visit</h4>
     </div>
   </div>
-  <div class="container">
+  <div class="container text-center">
     <p>Please introduce all fields of an existing carer and client to create a new visit.
-    This visit will show in the carers Android application.</p>
+      This visit will show in the carers Android application.</p>
+  </div>
+  <div class="container">
     <div class="row">
       <div class="col-2">
+        <!-- Column for Spacing -->
       </div>
         <div class="col-8">
           <form class="" action="create_visit.php" method="post">
-            <!--
-            <div class="form-group">
-              <label for="title">Title:</label>
-              <select class="form-control" name="title">
-                <option value="mr">Mr</option>
-                <option value="ms">Ms</option>
-                <option value="mrs">Mrs</option>
-                <option value="miss">Miss</option>
-                <option value="dr">Dr</option>
-                <option value="madam">Madam</option>
-              </select>
-            </div>
-          -->
             <div class="form-group">
               <label for="client-id">Select Client:</label>
               <?php
@@ -75,11 +65,11 @@
                 <button href="panel.php" class="btn btn-primary btn-lg" type="button">Go Back</button>
               </a>
             </div>
-
             </div>
           </form>
         </div>
       <div class="col-2">
+        <!-- Column for Spacing -->
       </div>
     </div>
   </div>

@@ -13,28 +13,32 @@
              <section class="row text-center placeholders">
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_client.php">
-                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
+                 <img src="images/icon_client.png" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
                  </a>
                  <h4>Clients</h4>
                  <div class="text-muted">Add a new client</div>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_carer.php">
-                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                  <img src="images/icon_carer.png" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+                 <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
                  </a>
                  <h4>Carers</h4>
                  <span class="text-muted">Add a new carer</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_visit.php">
-                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+            <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
+                 <img src="images/icon_visit.png" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
                  </a>
                  <h4>Visits</h4>
                  <span class="text-muted">Add a new visit</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="reports.php">
-                 <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                 <img src="images/icon_reports.png" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+                 <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
                  </a>
                  <h4>Reports</h4>
                  <span class="text-muted">View reports</span>

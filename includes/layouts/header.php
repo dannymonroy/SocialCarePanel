@@ -42,7 +42,7 @@
             <a class="nav-link" href="reports.php">Reports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="about.php">Help</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">Log out</a>

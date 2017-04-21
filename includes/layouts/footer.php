@@ -8,7 +8,7 @@ footer{
 </style>
 <footer class="footer">
 		<div class="container text-center">
-		<p class="lead">Social Care Application 2017 &copy; Danny Monroy</p>
+		<p class="lead">Social Care Application <?php echo date("Y")?> &copy; Danny Monroy</p>
 		</div>
 </footer>
 <?php

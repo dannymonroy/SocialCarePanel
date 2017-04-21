@@ -65,11 +65,17 @@
               <label for="date">Date:</label>
               <input type="text" name="date" placeholder="dd-mm-yyyy">
             </div>
-            <div class="col-md text-center" id="submit">
-            <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
-            <a href="panel.php" name="back">
-              <button href="panel.php" class="btn btn-primary" type="button">Go Back</button>
-            </a>
+            <div class="row">
+
+            <div class="col-sm text-center padding">
+                <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
+            </div>
+            <div class="col-sm text-center padding">
+              <a href="panel.php" name="back" class="margin">
+                <button href="panel.php" class="btn btn-primary btn-lg" type="button">Go Back</button>
+              </a>
+            </div>
+
             </div>
           </form>
         </div>

@@ -47,7 +47,10 @@ label{
 }
 
 .margin{
-  margin: 0, 10%;
+  margin: 0 10%;
+}
+.margin-top{
+  margin: 5% 0;
 }
 
 .padding{
@@ -56,4 +59,8 @@ label{
 
 .paddingRL{
   padding: 0% 5%;
+}
+
+#x{
+  color: RED;
 }

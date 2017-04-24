@@ -14,6 +14,11 @@
   <div id="visualization" class="margin-top"></div>
 
 <script type="text/javascript"> displayClientsGraph(); </script>
+<div class="container text-center">
+  <a href="panel.php" name="back" class="margin">
+    <button href="panel.php" class="btn btn-primary btn-lg" type="button">Go Back</button>
+  </a>
+</div>
 </div>
   <?php include("../includes/layouts/footer.php"); ?>
 </body>

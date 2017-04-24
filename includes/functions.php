@@ -61,7 +61,22 @@
     $url = "http://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
     header("Location: $url");
     exit;
-} 
+    }
+  }
+
+  function displayNumClients(){
+    global $connection;
+    $sql = mysqli_query ($connection,"SELECT * FROM Clients;");
+    $result = mysqli_num_rows($sql);
+    return $result;
+  }
+
+  function tableData(){
+    global $connection;
+    $query = "SELECT COUNT(*) AS num, date FROM Visits GROUP BY date;";
+    $result = mysqli_query($connection, $query);
+    confirm_query($result);
+    return $result;
   }
 
 

@@ -1,4 +1,4 @@
-<!-- TODO: Fix the name issue for it to be a global?-->
+<?php require_once("../includes/session.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,6 +29,9 @@
       <div class="row">
         <div class="col"><!-- For Space --></div>
         <div class="col-md-6 col-lg-3">
+          <div class="container">
+              <blockquote class="lead error"><?php echo message(); ?></blockquote>
+          </div>
           <form action="login_process.php" method="post">
             <div class="form-group input-group-lg" >
               <label for="username">Username:</label>

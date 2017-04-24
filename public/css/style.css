@@ -61,6 +61,6 @@ label{
   padding: 0% 5%;
 }
 
-#x{
-  color: RED;
+.error{
+  color: #ff0000;
 }

@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <!-- General JavaScript Import-->
     <script src="js/script.js"></script>
+    <!-- vis.js -->
+    <link href="http://visjs.org/dist/vis.css" rel="stylesheet" type="text/css" />
+    <script src="http://visjs.org/dist/vis.js"></script>
+    <link href="http://visjs.org/dist/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+
     <title>Social Care Panel</title>
   </head>
   <body>

@@ -36,7 +36,7 @@
                  <span class="text-muted">Add a new visit</span>
                </div>
                <div class="col-6 col-sm-3 placeholder">
-                 <a href="reports.php">
+                 <a href="http://socialcareapp.000webhostapp.com/public/reports.php">
                  <img src="images/icon_reports.png" width="200" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
                  <!--<img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">-->
                  </a>

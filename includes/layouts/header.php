@@ -50,7 +50,7 @@
             <a class="nav-link" href="about.php">Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Log out</a>
+            <a class="nav-link" href="index.php">Log out</a>
           </li>
         </ul>
       </div>

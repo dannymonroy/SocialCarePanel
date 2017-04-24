@@ -29,7 +29,7 @@
       <div class="row">
         <div class="col"><!-- For Space --></div>
         <div class="col-md-6 col-lg-3">
-          <form action="panel.php" method="post">
+          <form action="login_process.php" method="post">
             <div class="form-group input-group-lg" >
               <label for="username">Username:</label>
               <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
@@ -39,7 +39,7 @@
               <input type="password" class="form-control input-lg" id="password" placeholder="Password" name="password" required>
             </div>
             <div class="col-md text-center" id="submit">
-              <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+              <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
             </div>
           </form>
         </div>

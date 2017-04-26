@@ -1,3 +1,4 @@
+<?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php");?>
 <?php include("../includes/layouts/header.php");?>
@@ -15,6 +16,7 @@
                  </a>
                  <h4>Clients</h4>
                  <div class="text-muted">Add a new client</div>
+                 <blockquote class="lead error"><?php echo messageClient(); ?></blockquote>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_carer.php">
@@ -23,6 +25,7 @@
                  </a>
                  <h4>Carers</h4>
                  <span class="text-muted">Add a new carer</span>
+                <blockquote class="lead error"><?php echo messageCarer(); ?></blockquote>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="new_visit.php">
@@ -31,6 +34,7 @@
                  </a>
                  <h4>Visits</h4>
                  <span class="text-muted">Add a new visit</span>
+                 <blockquote class="lead error"><?php echo messageVisit(); ?></blockquote>
                </div>
                <div class="col-6 col-sm-3 placeholder">
                  <a href="http://socialcareapp.000webhostapp.com/public/reports.php">
@@ -43,7 +47,7 @@
              </section>
            </main>
            <div class="padding">
-             <br />
+
            </div>
            <div class="container justify-center">
              <div class="col text-center">

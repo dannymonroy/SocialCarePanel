@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
               <label for="name">First Name:</label>
-              <input class="form-control" type="text" name="name" placeholder="John" value="">
+              <input class="form-control" type="text" name="name" placeholder="John" value="" required>
             </div>
             <div class="form-group">
               <label for="middle_name">Middle Name:</label>
@@ -34,17 +34,17 @@
             </div>
             <div class="form-group">
               <label for="surname">Surname:</label>
-              <input class="form-control" type="text" name="surname" placeholder="Doe">
+              <input class="form-control" type="text" name="surname" placeholder="Doe" required>
             </div>
             <div class="form-group">
               <label for="address">Address:</label>
-              <textarea class="form-control" id="address" name="address" rows="3" placeholder="Full Address"></textarea>
+              <textarea class="form-control" id="address" name="address" rows="3" placeholder="Full Address" required></textarea>
             </div>
             <div class="form-group">
               <label for="postcode">Postcode:</label>
-              <input  type="text" name="postcode" placeholder="NW5 4PJ">
+              <input  type="text" name="postcode" placeholder="NW5 4PJ" required>
               <label for="area">Area:</label>
-              <input type="text" name="area" placeholder="London">
+              <input type="text" name="area" placeholder="London" required>
               <label for="keycode">Keycode:</label>
               <input type="text" name="keycode" placeholder="1234">
             </div>

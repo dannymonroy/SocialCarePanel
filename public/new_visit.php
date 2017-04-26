@@ -47,13 +47,13 @@
 
             <div class="form-group">
                 <label for="start_time">Start Time:</label>
-                <input type="text" name="start_time" placeholder="00:00">
+                <input type="text" name="start_time" placeholder="00:00" required>
                 <label for="end_time">End Time:</label>
-                <input type="text" name="end_time" placeholder="00:00">
+                <input type="text" name="end_time" placeholder="00:00" required>
             </div>
             <div class="form-group">
               <label for="date">Date:</label>
-              <input type="text" name="date" placeholder="dd-mm-yyyy">
+              <input type="text" name="date" placeholder="dd-mm-yyyy" required>
             </div>
             <div class="row">
 

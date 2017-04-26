@@ -13,7 +13,7 @@
 
     if (mysqli_num_rows($resultUser)!=0 AND mysqli_num_rows($resultPassword)!=0) {
       redirect_to("panel.php");
-      $_SESSION["user"] = $username;
+      //$_SESSION["user"] = $username;
     } else {
       $_SESSION["message_login"] = "Login was not successful. Either your username or password are not correct.";
       redirect_to("index.php");

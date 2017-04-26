@@ -1,3 +1,4 @@
+<?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php");?>
 
@@ -12,8 +13,6 @@
     $startTime = mysql_prep($_POST["start_time"]);
     $endTime = mysql_prep($_POST["end_time"]);
 
-
-
     $query =  "INSERT INTO Visits ( ";
     $query .= " client_id, carer_id, date, start_time, end_time ";
     $query .= " ) VALUES ( ";
@@ -23,13 +22,12 @@
 
     $result = mysqli_query($connection, $query);
 
-
-
     if($result){
+      $_SESSION["message_visit"] = "The visit was created succesfully!";
       redirect_to("panel.php");
     } else {
-
-      redirect_to("reports.php");
+      $_SESSION["message_visit"] = "Something went wrong with the process, please try again!";
+      redirect_to("panel.php");
     }
 
   } else {

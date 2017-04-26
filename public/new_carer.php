@@ -26,7 +26,7 @@
             </div>
             <div class="form-group">
               <label for="name">First Name:</label>
-              <input class="form-control" type="text" name="name" placeholder="John" id="name" value="">
+              <input class="form-control" type="text" name="name" placeholder="John" id="name" value="" required>
             </div>
             <div class="form-group">
               <label for="middle_name">Middle Name:</label>
@@ -34,11 +34,11 @@
             </div>
             <div class="form-group">
               <label for="surname">Surname:</label>
-              <input class="form-control" type="text" name="surname" placeholder="Doe" id="surname" value="">
+              <input class="form-control" type="text" name="surname" placeholder="Doe" id="surname" value="" required>
             </div>
             <div class="form-group">
               <label for="password">Password:</label>
-              <input class="form-control" id="password" name="password" placeholder="Password for Carer"></input>
+              <input class="form-control" id="password" name="password" placeholder="Password for Carer" required></input>
             </div>
             <div class="row">
 

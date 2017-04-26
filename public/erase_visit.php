@@ -51,7 +51,7 @@
             </div>
             <div class="form-group">
               <label for="date">Date:</label>
-              <input type="text" name="date" placeholder="dd-mm-yyyy" required>
+              <input type="text" name="date" placeholder="dd/mm/yyyy" required>
             </div>
             <div class="row">
 

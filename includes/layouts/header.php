@@ -11,6 +11,7 @@
     <!-- General CSS import -->
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- Favicon import -->
     <link rel="icon" href="images/favicon_i.ico" type="image/x-icon">
     <!-- General JavaScript Import-->
     <script src="js/script.js"></script>

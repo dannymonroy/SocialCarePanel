@@ -37,6 +37,7 @@
 
     $name = strtolower($name);
     $surname = strtolower($surname);
+    $num = mt_rand(10,999);
 
     if(strlen($surname) >= 4){
       $surname = substr($surname, 0, 4);
@@ -45,7 +46,7 @@
     } else {
       $surname = $surname.$surname;
     }
-    $personId= $name[0].$name[1].$surname;
+    $personId= $name[0].$name[1].$surname.$num;
 
     return $personId;
   }

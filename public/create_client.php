@@ -26,7 +26,7 @@
     $result = mysqli_query($connection, $query);
 
     if($result){
-      $_SESSION["message_client"] = "The client was created succesfully!";
+      $_SESSION["message_client"] = "The client $clientId was created succesfully!";
       redirect_to("panel.php");
     } else {
       $_SESSION["message_client"] = "Something went wrong with the process, please try again!";

@@ -45,6 +45,7 @@
               <input class="btn btn-primary btn-lg" name="submit" type="submit" value="Submit">
             </div>
           </form>
+          <blockquote>For more information in how to use the site please click <a href="about.php">here</a></blockquote>
         </div>
         <div class="col"><!-- For Space --></div>
       </div>

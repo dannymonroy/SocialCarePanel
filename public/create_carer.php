@@ -22,7 +22,7 @@
     $result = mysqli_query($connection, $query);
 
     if($result){
-      $_SESSION["message_carer"] = "The carer was created succesfully!";
+      $_SESSION["message_carer"] = "The carer $carerId was created succesfully!";
       redirect_to("panel.php");
     } else {
       $_SESSION["message_carer"] = "Something went wrong with the process, please try again!";

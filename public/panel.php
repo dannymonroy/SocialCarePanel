@@ -43,6 +43,7 @@
                  </a>
                  <h4>Reports</h4>
                  <span class="text-muted">View reports</span>
+                 <blockquote class="lead error"><?php echo messageEraseVisit(); ?></blockquote>
                </div>
              </section>
            </main>
@@ -80,6 +81,11 @@
    <?php } ?>
  </tbody>
 </table>
+</div>
+<div class="col-sm text-center padding">
+  <a href="erase_visit.php" name="back" class="margin">
+    <button class="btn btn-primary btn-lg" type="button">Delete Visit</button>
+  </a>
 </div>
 <?php include("../includes/layouts/footer.php"); ?>
     <!-- Bootstrap 4: Scripts  -->

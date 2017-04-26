@@ -37,4 +37,13 @@
     }
   }
 
+  function messageEraseVisit(){
+    if(isset($_SESSION["message_visit_erased"])){
+      $out = htmlentities($_SESSION["message_visit_erased"]);
+
+      $_SESSION["message_visit_erased"] = null;
+      return $out;
+    }
+  }
+
 ?>

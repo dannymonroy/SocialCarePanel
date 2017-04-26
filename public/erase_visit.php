@@ -1,14 +1,15 @@
+<?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
   <div class="container text-center">
     <div class="padding">
-      <h4 class="display-4">New Visit</h4>
+      <h4 class="display-4">Delete Visit</h4>
     </div>
   </div>
   <div class="container text-center">
-    <p>Please introduce all fields of an existing carer and client to create a new visit.
-      This visit will show in the carers Android application.</p>
+    <p>You are about to delete a visit, please introduce the following information to confirm.</p>
+    <blockquote class="lead error"><?php echo messageEraseVisit(); ?></blockquote>
   </div>
   <div class="container">
     <div class="row">
@@ -16,7 +17,7 @@
         <!-- Column for Spacing -->
       </div>
         <div class="col-8">
-          <form class="" action="create_visit.php" method="post">
+          <form class="" action="delete_visit.php" method="post">
             <div class="form-group">
               <label for="client-id">Select Client:</label>
               <?php
@@ -47,8 +48,6 @@
             <div class="form-group">
                 <label for="start_time">Start Time:</label>
                 <input type="text" name="start_time" placeholder="00:00" required>
-                <label for="end_time">End Time:</label>
-                <input type="text" name="end_time" placeholder="00:00" required>
             </div>
             <div class="form-group">
               <label for="date">Date:</label>
@@ -61,7 +60,7 @@
             </div>
             <div class="col-sm text-center padding">
               <a href="panel.php" name="back" class="margin">
-                <button href="panel.php" class="btn btn-primary btn-lg" type="button">Go Back</button>
+                <button class="btn btn-primary btn-lg" type="button">Go Back</button>
               </a>
             </div>
             </div>

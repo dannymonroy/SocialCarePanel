@@ -12,14 +12,14 @@ PHP script that writes to the database to create a care worker.
 ?>
 <?php
   if(isset($_POST["submit"])){
-    $title = mysql_prep($_POST["title"]);
-    $name = mysql_prep($_POST["name"]);
-    $surname = mysql_prep($_POST["surname"]);
+    $title = htmlentities(mysql_prep($_POST["title"]));
+    $name = htmlentities(mysql_prep($_POST["name"]));
+    $surname = htmlentities(mysql_prep($_POST["surname"]));
 
     $carerId = create_id($name, $surname);
 
-    $middleName = mysql_prep($_POST["middle_name"]);
-    $password = mysql_prep($_POST["password"]);
+    $middleName = htmlentities(mysql_prep($_POST["middle_name"]));
+    $password = htmlentities(mysql_prep($_POST["password"]));
 
     $query =  "INSERT INTO Carers ( ";
     $query .= " carer_id, password, title, name, middle_name, surname ";

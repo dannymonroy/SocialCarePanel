@@ -13,17 +13,17 @@ PHP script that writes to the database to create a client.
 <?php
 
   if(isset($_POST["submit"])){
-    $title = mysql_prep($_POST["title"]);
-    $name = mysql_prep($_POST["name"]);
-    $middleName = mysql_prep($_POST["middle_name"]);
-    $surname = mysql_prep($_POST["surname"]);
-    $clientId = create_id($name, $surname);
-    $address = mysql_prep($_POST["address"]);
-    $postcode = mysql_prep($_POST["postcode"]);
-    $area = mysql_prep($_POST["area"]);
-    $generalInfo = mysql_prep($_POST["general_information"]);
-    $keycode = mysql_prep($_POST["keycode"]);
-    $levelVulnerability = mysql_prep($_POST["level_vulnerability"]);
+    $title = htmlentities(mysql_prep($_POST["title"]));
+    $name = htmlentities(mysql_prep($_POST["name"]));
+    $middleName = htmlentities(mysql_prep($_POST["middle_name"]));
+    $surname = htmlentities(mysql_prep($_POST["surname"]));
+    $clientId = htmlentities(create_id($name, $surname));
+    $address = htmlentities(mysql_prep($_POST["address"]));
+    $postcode = htmlentities(mysql_prep($_POST["postcode"]));
+    $area = htmlentities(mysql_prep($_POST["area"]));
+    $generalInfo = htmlentities(mysql_prep($_POST["general_information"]));
+    $keycode = htmlentities(mysql_prep($_POST["keycode"]));
+    $levelVulnerability = htmlentities(mysql_prep($_POST["level_vulnerability"]));
 
     $query =  "INSERT INTO Clients ( ";
     $query .= " client_id, title, name, middle_name, surname, address, postcode, area, general_information, keycode, level_vulnerability";

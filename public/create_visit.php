@@ -14,12 +14,12 @@ PHP script that writes to the database to create a visit.
 <?php
   if(isset($_POST["submit"])){
 
-    $clientId = mysql_prep($_POST["client_id"]);
-    $carerId = mysql_prep($_POST["carer_id"]);
-    $date = mysql_prep($_POST["date"]);
+    $clientId = htmlentities(mysql_prep($_POST["client_id"]));
+    $carerId = htmlentities(mysql_prep($_POST["carer_id"]));
+    $date = htmlentities(mysql_prep($_POST["date"]));
     $date = date_formatted($date);
-    $startTime = mysql_prep($_POST["start_time"]);
-    $endTime = mysql_prep($_POST["end_time"]);
+    $startTime = htmlentities(mysql_prep($_POST["start_time"]));
+    $endTime = htmlentities(mysql_prep($_POST["end_time"]));
 
     $query =  "INSERT INTO Visits ( ";
     $query .= " client_id, carer_id, date, start_time, end_time ";

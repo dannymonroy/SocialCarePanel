@@ -14,11 +14,11 @@ PHP script that writes to the database to delete a visit.
 <?php
   if(isset($_POST["submit"])){
 
-    $clientId = mysql_prep($_POST["client_id"]);
-    $carerId = mysql_prep($_POST["carer_id"]);
-    $date = mysql_prep($_POST["date"]);
+    $clientId = htmlentities(mysql_prep($_POST["client_id"]));
+    $carerId = htmlentities(mysql_prep($_POST["carer_id"]));
+    $date = htmlentities(mysql_prep($_POST["date"]));
     $date = date_formatted($date);
-    $startTime = mysql_prep($_POST["start_time"]);
+    $startTime = htmlentities(mysql_prep($_POST["start_time"]));
 
     $query =  "DELETE FROM Visits ";
     $query .= " WHERE client_id = '$clientId' AND carer_id = '$carerId' AND date = '$date' AND start_time = '$startTime' ";

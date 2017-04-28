@@ -17,8 +17,8 @@ PHP script that authenticates the user when login in.
   if(isset($_POST["submit"])){
 
     if($_SESSION["username"] != null) {
-    $username = mysql_prep($_POST["username"]);
-    $password = mysql_prep($_POST["password"]);
+    $username = htmlentities(mysql_prep($_POST["username"]));
+    $password = htmlentities(mysql_prep($_POST["password"]));
 
     $queryUser = "SELECT manager_id FROM Managers WHERE manager_id = '$username' LIMIT 1";
     $queryPassword = "SELECT password FROM Managers WHERE password = '$password' LIMIT 1";

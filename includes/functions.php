@@ -29,11 +29,10 @@
     }
   }
 
-  function find_all_visists(){
+  function find_all_visits(){
     global $connection;
-    $query = "SELECT * FROM test;";
+    $query = "SELECT Clients.title, Clients.name, Clients.surname, Visits.carer_id, Visits.start_time, Visits.end_time FROM Clients, Visits ORDER BY Visits.start_time LIMIT 15;";
     $result = mysqli_query($connection, $query);
-    //Functions: Confirms if the query was successful.
     confirm_query($result);
     return $result;
   }

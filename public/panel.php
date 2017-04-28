@@ -71,20 +71,24 @@ Form that posts the information to create_carer.php.
                <tr>
                  <th>Title</th>
                  <th>Name</th>
-                 <th>Area</th>
+                 <th>Surname</th>
+                 <th>Carer Id</th>
                  <th>Start Time</th>
+                 <th>End Time</th>
                </tr>
              </thead>
  <tbody>
    <?php
-    $result = find_all_visists();
+    $result = find_all_visits();
     while($row = mysqli_fetch_assoc($result)){
       ?>
    <tr>
      <th scope="row"><?php echo $row['title']?></th>
-     <td><b><?php echo $row['full_name']?></b></td>
-     <td><?php echo $row['area']?></td>
-     <td><?php echo $row['start_date']?></td>
+     <td><b><?php echo $row['name']?></b></td>
+     <td><?php echo $row['surname']?></td>
+     <td><?php echo $row['carer_id']?></td>
+     <td><?php echo $row['start_time']?></td>
+     <td><?php echo $row['end_time']?></td>
    </tr>
 
    <?php } ?>

@@ -2,6 +2,7 @@
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
+<?php notLoginRedirect(); ?>
 <!--
 
 Social Care Management Panel: create_carer.php

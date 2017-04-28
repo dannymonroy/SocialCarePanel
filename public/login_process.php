@@ -11,7 +11,12 @@ PHP script that authenticates the user when login in.
 */
 ?>
 <?php
+
+  $_SESSION["username"] = $_POST["username"];
+
   if(isset($_POST["submit"])){
+
+    if($_SESSION["username"] != null) {
     $username = mysql_prep($_POST["username"]);
     $password = mysql_prep($_POST["password"]);
 
@@ -26,6 +31,8 @@ PHP script that authenticates the user when login in.
       $_SESSION["message_login"] = "Login was not successful. Either your username or password are not correct.";
       redirect_to("index.php");
     }
+
+  }
 
   } else {
     redirect_to("index.php");

@@ -52,4 +52,10 @@
     }
   }
 
+  function notLoginRedirect(){
+    if($_SESSION["username"] == null){
+      redirect_to("index.php");
+    }
+  }
+
 ?>

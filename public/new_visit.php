@@ -1,6 +1,8 @@
+<?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
+<?php notLoginRedirect(); ?>
 <!--
 
 Social Care Management Panel: new_visit.php

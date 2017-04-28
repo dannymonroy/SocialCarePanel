@@ -1,5 +1,11 @@
 <?php require_once("../includes/session.php"); ?>
+<!--
 
+Social Care Management Panel: index.php
+Danny Monroy, drodri06
+Basic login in page.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>

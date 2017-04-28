@@ -1,4 +1,12 @@
 <?php
+  /*
+
+  Social Care Management Panel: index1.php
+  Danny Monroy, drodri06
+  This script gets the id of a care worker, check for the visit that particular care worker has
+  and returns a JSON object called 'visits' for the Android application to handle.
+
+  */
   require_once("includes/db_connection.php");
 
   $carer = $_GET['id'];

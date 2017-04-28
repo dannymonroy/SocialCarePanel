@@ -1,7 +1,15 @@
 <?php require_once("../includes/session.php"); ?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php");?>
+<?php
+/*
 
+Social Care Management Panel: create_client.php
+Danny Monroy, drodri06
+PHP script that writes to the database to create a client.
+
+*/
+?>
 <?php
 
   if(isset($_POST["submit"])){
@@ -37,7 +45,5 @@
     redirect_to("new_carer.php");
   }
 
-  // We free the results.
-  //mysqli_free_result($result);
 
 ?>

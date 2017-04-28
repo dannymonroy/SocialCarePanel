@@ -1,4 +1,10 @@
 <?php
+  /*
+  Social Care Management Panel: Sessions
+  Danny Monroy, drodri06
+  Script to deal with sessions. Apart from the session start in includes
+  returning the respective messages when the database has been changed
+  */
   session_start();
 
   function message(){

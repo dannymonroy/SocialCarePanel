@@ -1,3 +1,10 @@
+<!--
+
+Social Care Management Panel: Footer
+Danny Monroy, drodri06
+Footer with automatic year copyright
+
+-->
 <style>
 footer{
     color:#FFFFFF;

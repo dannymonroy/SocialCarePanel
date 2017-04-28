@@ -1,9 +1,8 @@
 /*
-function grab_form_info(){
-  var name = document.getElementById("name").value;
-  var surname = document.getElementById("surname").value;
-  return create_id(name, surname);
-}
+
+Social Care Management Panel: vis.js graph.  Danny Monroy, drodri06
+Code that displays a graph. Data is hardcoded for demostration purposes only.
+
 */
 function displayClientsGraph(){
 

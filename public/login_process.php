@@ -2,7 +2,16 @@
 <?php require_once("../includes/db_connection.php"); ?>
 <?php require_once("../includes/functions.php");?>
 <?php
-  if(isset($_POST['submit'])){
+/*
+
+Social Care Management Panel: login_process.php
+Danny Monroy, drodri06
+PHP script that authenticates the user when login in.
+
+*/
+?>
+<?php
+  if(isset($_POST["submit"])){
     $username = mysql_prep($_POST["username"]);
     $password = mysql_prep($_POST["password"]);
 
@@ -13,14 +22,14 @@
 
     if (mysqli_num_rows($resultUser)!=0 AND mysqli_num_rows($resultPassword)!=0) {
       redirect_to("panel.php");
-      //$_SESSION["user"] = $username;
     } else {
       $_SESSION["message_login"] = "Login was not successful. Either your username or password are not correct.";
       redirect_to("index.php");
     }
 
-
   } else {
     redirect_to("index.php");
   }
+
+
 ?>

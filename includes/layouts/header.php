@@ -1,3 +1,10 @@
+<!--
+
+Social Care Management Panel: Header
+Danny Monroy, drodri06.
+Header file that includes the imports for Bootstrap, vis.js, css and the navigation bar.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>

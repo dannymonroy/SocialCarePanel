@@ -3,6 +3,14 @@
 <?php require_once("../includes/functions.php");?>
 <?php include("../includes/layouts/header.php");?>
 
+<!--
+
+Social Care Management Panel: new_carer.php
+Danny Monroy, drodri06
+Form that posts the information to create_carer.php.
+
+-->
+
       <div class="container justify-center">
            <main class="col text-center">
              <div class="padding">

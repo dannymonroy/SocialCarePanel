@@ -2,6 +2,14 @@
 <?php require_once("../includes/functions.php");?>
 <?php include("../includes/layouts/header.php");?>
 <?php @changeToHTTP(); ?>
+<!--
+
+Social Care Management Panel: reports.php
+Danny Monroy, drodri06
+This area reports on information that exists in the database.
+The graph is included with hard coded data for demostration purposes.
+
+-->
 <div class="container justify-center">
   <h2 class="margin-top">View Reports</h2>
 

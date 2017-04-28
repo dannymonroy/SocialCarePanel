@@ -1,6 +1,8 @@
 <?php
 	require_once("includes/db_connection.php");
 	/*
+	Social Care Management Panel: index1.php
+  Danny Monroy, drodri06
 	Script connects to the Android Social Care Application. It retrieves a carer id and a password to do the log in.
 	it then checks the database and returns a json object with the id (for further use by index1.php) and a boolean if the login was
 	succesful or not.	Script based on https://github.com/tonikami PHP work

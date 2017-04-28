@@ -1,5 +1,12 @@
 <?php require_once("../includes/functions.php");?>
 <?php include("../includes/layouts/header.php");?>
+<!--
+
+Social Care Management Panel: new_client.php
+Danny Monroy, drodri06
+Form that posts the information to create_client.php.
+
+-->
   <div class="container text-center">
     <div class="padding">
       <h4 class="display-4">New Client</h4>

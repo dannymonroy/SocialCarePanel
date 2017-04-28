@@ -1,6 +1,13 @@
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
+<!--
+
+Social Care Management Panel: new_visit.php
+Danny Monroy, drodri06
+Form that posts the information to create_visit.php.
+
+-->
   <div class="container text-center">
     <div class="padding">
       <h4 class="display-4">New Visit</h4>

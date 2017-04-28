@@ -2,6 +2,13 @@
 <?php require_once("../includes/functions.php");?>
 <?php require_once("../includes/db_connection.php"); ?>
 <?php include("../includes/layouts/header.php");?>
+<!--
+
+Social Care Management Panel: create_carer.php
+Danny Monroy, drodri06
+Form that writes to the database to create a care worker.
+
+-->
   <div class="container text-center">
     <div class="padding">
       <h4 class="display-4">Delete Visit</h4>

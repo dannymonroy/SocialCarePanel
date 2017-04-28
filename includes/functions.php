@@ -1,4 +1,9 @@
-<?php function redirect_to($new_location){
+<?php  /*
+  Social Care Management Panel: Sessions
+  Danny Monroy, drodri06
+  Various helper functions PHP files. Includes, redirections, sql injection protection,
+  some queries and create id for both carers and managers
+  */ function redirect_to($new_location){
   header("Location: ". $new_location);
   exit;
 }

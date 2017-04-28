@@ -1,4 +1,9 @@
 <?php
+/*
+Social Care Management Panel: Database conection
+Danny Monroy, drodri06
+Here we connect to the database when needed.
+*/
 
   define("DB_SERVER", "localhost");
   define("DB_USER", "id457409_danny");

@@ -1,3 +1,10 @@
+<!--
+
+Social Care Management Panel: About
+Danny Monroy, drodri06
+About page explaining how to use the application with link to the repository.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>

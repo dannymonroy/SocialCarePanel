@@ -1,5 +1,5 @@
 <?php  /*
-  Social Care Management Panel: Sessions
+  Social Care Management Panel: Functions
   Danny Monroy, drodri06
   Various helper functions PHP files. Includes, redirections, sql injection protection,
   some queries and create id for both carers and managers

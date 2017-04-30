@@ -67,6 +67,27 @@
     return $result;
   }
 
+  function displayNumClientsHigh(){
+    global $connection;
+    $sql = mysqli_query ($connection,"SELECT * FROM Clients WHERE level_vulnerability = 'High';");
+    $result = mysqli_num_rows($sql);
+    return $result;
+  }
+
+  function displayNumClientsMedium(){
+    global $connection;
+    $sql = mysqli_query ($connection,"SELECT * FROM Clients WHERE level_vulnerability = 'Medium';");
+    $result = mysqli_num_rows($sql);
+    return $result;
+  }
+
+  function displayNumClientsLow(){
+    global $connection;
+    $sql = mysqli_query ($connection,"SELECT * FROM Clients WHERE level_vulnerability = 'Low';");
+    $result = mysqli_num_rows($sql);
+    return $result;
+  }
+
   function tableData(){
     global $connection;
     $query = "SELECT COUNT(*) AS num, date FROM Visits GROUP BY date;";

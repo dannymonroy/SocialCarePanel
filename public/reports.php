@@ -19,6 +19,18 @@ The graph is included with hard coded data for demostration purposes.
     <?php
     echo displayNumClients();
     ?></h3>
+  <p class="text-justify"> <strong>Number of clients with High Vulnerability: </strong></p><h3 class="margin-top">
+    <?php
+    echo displayNumClientsHigh();
+    ?></h3>
+  <p class="text-justify"> <strong>Number of clients with Medium Vulnerability: </strong></p><h3 class="margin-top">
+    <?php
+    echo displayNumClientsMedium();
+    ?></h3>
+  <p class="text-justify"> <strong>Number of clients with Low Vulnerability: </strong></p><h3 class="margin-top">
+    <?php
+    echo displayNumClientsLow();
+    ?></h3>
   <p class="text-justify"> <strong>Visits added: </strong> </p>
   <p>The below graph shows the amount of visits given to your clients on a daily basis.</p>
   <div id="visualization" class="margin-top"></div>

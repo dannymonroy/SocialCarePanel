@@ -27,7 +27,15 @@ To do this, mainly PHP was used for the backend and for the front end and Bootst
 
 All designs were created for this specific information. In terms of reporting Vis.js was used to display graphs.
 
+## Screenshots
+
+### Login Area
+![Social Care Application](http://i.imgur.com/n8SKqcG.jpg)
+### Main Panel
+![Social Care Application](http://i.imgur.com/eADgF6c.jpg)
+### Report Area
+![Social Care Application](http://i.imgur.com/eVPXyH7.jpg)
+
 ---
 
 &copy; 2017 Danny Monroy
-

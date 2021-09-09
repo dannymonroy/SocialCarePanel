@@ -16,7 +16,7 @@
 
 	  $sql = mysqli_prepare($connection, "SELECT carer_id FROM Carers WHERE carer_id = ? AND password = ?");
 
-		mysqli_stmt_bind_param($sql, "ss", $carer_id, $password);
+	mysqli_stmt_bind_param($sql, "ss", $carer_id, $password);
     mysqli_stmt_execute($sql);
     mysqli_stmt_store_result($sql);
     @mysqli_stmt_bind_result($sql, $carer_id, $password);
